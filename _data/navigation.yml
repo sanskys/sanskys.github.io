@@ -1,13 +1,13 @@
 # main links
 main:
   - title: "Home"
-    url: /home/
+    url: /
   - title: "SNSKY Pool"
-    url: /home/#pool/
+    url: /#pool/
   - title: "Ambassador"
-    url: /home/#trees/
+    url: /#trees/
   - title: "FAQ"
-    url: /home/#faq/
+    url: /#faq/
   - title: "Grafana Tutorial"
     url: /grafana/
   - title: "Twitter Bot"

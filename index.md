@@ -1,8 +1,7 @@
 ---
 title: "Boost-up your Crypto journey now!"
 layout: splash
-permalink: /home/
-date: 2020-04-08
+#permalink: /home/
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
