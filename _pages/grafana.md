@@ -1,7 +1,15 @@
 ---
+title: "SPO Grafana Tutorial"
 layout: single
 permalink: /grafana/
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: /assets/images/6b7f55bc225c4e30f346bf154cb39f22_1300x246.jpeg
 ---
+![Grafana Tutorial](/assets/images/6aaef6221ba53739628df6959598b271_1016x411.jpg)
+
+
 Once you have sucessfully set-up a Cardano pool, then comes the most beautifull part - setting up your Dashboard and Alerts! You surely dont want to gaze the PC whole day, or?
 
 
@@ -491,6 +499,10 @@ Save the file and exit your text editor and to activate the changes, restart Gra
 $ sudo systemctl restart grafana-server
 ```
 
+
+
+![Leader Panel](/assets/images/6b7f55bc225c4e30f346bf154cb39f22_1300x246.jpeg)
+
 ## 8. Advanced Users: Slot Leader Panel
 
 Once your Pool gets big and is regularly minting blocks, it becomes diffcult to keep track of all Leader Slots and also to identify the available gaps for Pool maintainance. This Slot Leader Panel is quite helpful as it gives a good overview of all scheduled Slots in TimeSeries.
@@ -527,7 +539,7 @@ cat slot.csv
 
 The whole script including this addition can be copied from here:
 
-https://github.com/sanskys/SNSKY/blob/main/SlotLeader/script.sh
+[Slot Leader Script](https://github.com/sanskys/SNSKY/blob/main/SlotLeader/script.sh)
 
  
 
@@ -541,7 +553,7 @@ Next, we add the CSV Plugin to Grafana. Please follow the instructions under the
 
  
 
-https://grafana.com/grafana/plugins/marcusolsson-csv-datasource/?tab=installation
+[Grafana CSV Plugin](https://grafana.com/grafana/plugins/marcusolsson-csv-datasource/?tab=installation)
 
  
 
@@ -559,7 +571,7 @@ Delete the existing JSON code and replace it with the following:
 
  
 
-https://github.com/sanskys/SNSKY/blob/main/SlotLeader/LeaderPanel.json
+[Slot Leader Panel](https://github.com/sanskys/SNSKY/blob/main/SlotLeader/LeaderPanel.json)
 
  
 
