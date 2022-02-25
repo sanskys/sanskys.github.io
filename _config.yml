@@ -228,6 +228,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-responsive-image
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -236,7 +237,7 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
-
+  - jekyll-responsive-image
 
 # Archives
 #  Type
@@ -288,3 +289,11 @@ defaults:
       comments: # true
       share: true
       related: true
+
+# Image Template
+responsive_image:
+  template: _includes/imager-js.html
+  sizes:
+    - width: 320
+    - width: 480
+    - width: 800

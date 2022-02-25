@@ -1,7 +1,6 @@
 ---
 title: "Boost-up your Crypto journey now!"
 layout: splash
-#permalink: /home/
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
@@ -48,7 +47,7 @@ projects:
     excerpt: "...coming soon. Stay Tuned!"
 
 donations:
-  - title: "OUR DONATIONS"
+ # - title: "OUR DONATIONS"
   - image_path: /assets/images/39f6ad0d38c67992747ab34e2acb84cf.png
   - image_path: /assets/images/a8b915eda7e2a6fd3ada416924602fee_1179x909.51428571429.jpeg
 
@@ -56,21 +55,11 @@ app_stake:
   - image_path: /assets/images/iphone-410324_960_720.jpg
     title: "How can you delegate using an APP?"
     excerpt: "Click the icon to download the Yoroi mobile app for your device
-
- 
-
     Launch the app and follow the instructions to connect/create/restore your Cardano wallet
 
  
-
     When the Wallet is ready, go to the “Dashboard” tab and click “Go to Staking Center”
-
- 
-
     Search for the Pool “SNSKY”
-
- 
-
     Click the “Delegate” button
 
  
@@ -80,25 +69,12 @@ web_stake:
   - image_path: /assets/images/browser-773215_960_720.png
     title: "How can you delegate using an Browser?"
     excerpt: "Click the icon to download the Yoroi Light wallet
-
- 
-
     Choose your browser option after clicking the download button
 
- 
 
     After adding it to your browser, launch the Yoroi wallet extension within the browser
-
- 
-
     Follow the instructions to connect/create/restore your Cardano wallet
-
- 
-
     Go to the “Delegation list” tab, and search for search for “SNSKY”
-
- 
-
     Click the “Delegate” button
 
  
@@ -178,7 +154,10 @@ feature_row_center:
 
 {% include feature_row id="projects" %}
 
+## DONATIONS ##
 {% include feature_row id="donations" %}
+
+## FAQs ##
 
 {% include feature_row id="app_stake" type="left" %}
 
