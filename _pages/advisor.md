@@ -25,7 +25,7 @@ and Tweet **@CardanoAdvisor Pool**: To receive best match among all Pools"
  
 wallet:
   - image_path: /assets/images/0d46dcfc0324dc39d8656f85b6a9d879_650x675.png
-    title: "Dont want to miss any Wallet Transaction?"
+    title: "Don't want to miss any Transaction in your Wallet?"
     excerpt: "
 
 We are used to getting SMS and Email Alerts when a transaction takes place in our Bank Account or Credit Card. But no one Alerts us when a transaction takes place in our Wallet - like on a NFT airdrop or when you receive a expected payment.

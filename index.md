@@ -8,11 +8,11 @@ header:
 
   actions:
     - label: "Stake with SNSKY and win Deep Sky NFTs!"
-      url: "/home/#app_stake"
+      url: "#faqs"
 excerpt: "More than 30 Million ADA are staked with SNSKY Pool and we will be honored to welcome you in our family as well."
 
 intro: 
-  - title: "THE SNSKY POOL"
+  - title: "Why should you delegate to SNSKY?"
   - excerpt: 'We are a group of college friends who have come back together to run the SNSKY Stake Pool, with the Mission to create usefull content for the Cardano Community. Our Grafana Tutorial is very popular and is included in the CoinCashew Tutorial and in the Cardano Foundation Developer Portal. The Twitter Bot we developed is getting popular day by day and helping newcomers easily find the right Pools that match thier interests. We are also working on an exciting DApp. Stay Tuned!
  
  
@@ -20,14 +20,15 @@ Trees clean the air we pollute and preserve the water we drink. We wish that our
 
  
  
-Please stake with us so that we can develop and maintain these community tools.
+By delegating to our Pool you can not only support the development and maintainance of these community tools but also receive consistant rewards and regular Token give aways.
 Thank You!'
 whale:
   - image_path: /assets/images/E7B7323C-68DA-435E-8AE2-B1BD662C503C-ts1643629915.jpeg
-#  - image_path: /assets/images/1Tree-ts1635157062.jpg
+
 awards:
-  - image_path: /assets/images/ba2ed883e06df2618d791455b3a27067_240x287.png
-  - image_path: /assets/images/8058b56449ebb3f9e2ec99e7888e6165_240x240.png
+  - image_path: /assets/images/100delegators.png
+  - image_path: /assets/images/30Mstake.png
+  - image_path: /assets/images/100blocks.png
 
 projects:
   - image_path: /assets/images/freelancer-763730_960_720.jpg
@@ -36,7 +37,7 @@ projects:
     url: "/grafana/"
     btn_label: "Read More"
     btn_class: "btn--secondary"
-  - image_path: /assets/images/smartphone-586944_960_720.jpg
+  - image_path: /assets/images/chatbot--virtual-assistant--smartphone--cloud-communications.jpg
     title: "Twitter Bot"
     excerpt: "The Advisor Bot analyses your Twitter Timeline present you the top matching Pools"
     url: "/advisor/"
@@ -47,7 +48,6 @@ projects:
     excerpt: "...coming soon. Stay Tuned!"
 
 donations:
- # - title: "OUR DONATIONS"
   - image_path: /assets/images/39f6ad0d38c67992747ab34e2acb84cf.png
   - image_path: /assets/images/a8b915eda7e2a6fd3ada416924602fee_1179x909.51428571429.jpeg
 
@@ -145,12 +145,17 @@ feature_row_center:
     btn_label: "Read More"
     btn_class: "btn--primary"
 ---
+# OUR WHALE #
 
 {% include feature_row id="whale" type="center" %}
+
+## POOL AWARDS ##
 
 {% include feature_row id="awards" %}
 
 {% include feature_row id="intro" type="center" %}
+
+## CARDANO COMMUNITY PROJECTS ##
 
 {% include feature_row id="projects" %}
 
