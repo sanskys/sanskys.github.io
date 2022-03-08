@@ -94,16 +94,17 @@ $ sudo ufw allow proto tcp from <RN IP address> to any port 9100
 $ sudo ufw allow proto tcp from <RN IP address> to any port 12798
 
 $ sudo ufw reload
+```
 
 restart the nodes
-
+```shell
 $ sudo systemctl restart <your node name e.g. cnode>
 ```
 
 
 ## 2. Install Prometheus on Monitoring Node
 
-Install Prometheus on the Monitoring Node - the Node where the Grafanba Server will run. This could be on of the Relay nodes or a separate dedicated node for monitoring.
+Install Prometheus on the Monitoring Node - the Node where the Grafana Server will run. This could be on of the Relay nodes or a separate dedicated node for monitoring.
 
 ```shell
 $ sudo apt-get install -y prometheus
@@ -200,9 +201,10 @@ On the Monitoring Node open ports 3000 for Grafana
 $ sudo ufw allow from <your home IP address from where you plan to access Grafana> to any port 3000
 ```
 
-:::note
+---
+**NOTE**
 Please refer to [Grafana Labs Secuirty](https://grafana.com/docs/grafana/latest/administration/security/) for hardening>
-:::
+---
 
 ## 4. Setting up Grafana Dashboard
 
