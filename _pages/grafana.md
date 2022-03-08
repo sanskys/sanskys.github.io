@@ -203,7 +203,11 @@ $ sudo ufw allow from <your home IP address from where you plan to access Grafan
 
 ---
 **NOTE**
+
+
 Please refer to [Grafana Labs Secuirty](https://grafana.com/docs/grafana/latest/administration/security/) for hardening>
+
+
 ---
 
 ## 4. Setting up Grafana Dashboard
@@ -360,9 +364,10 @@ from_name = Grafana
 #############################
 ```
 
-![Email Alert](/assets/images/snsky_EmailAlert.jpg)
 
 Login to Grafana with username and password.
+
+![Email Alert](/assets/images/snsky_EmailAlert.jpg)
 
 Click on the "Bell" icon on the left sidebar.
 
@@ -392,7 +397,7 @@ Click on "Save" to add this channel
 
 
 
-Create an Alert if PN is not reachable
+Create an Alert if Block Producer is not reachable
 
 ![Peer Alert](/assets/images/snsky_PeerAlert.jpg)
 
