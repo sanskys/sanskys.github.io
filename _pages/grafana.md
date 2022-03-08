@@ -489,9 +489,8 @@ $ sudo systemctl restart grafana-server
 
 
 
-![Leader Panel](/assets/images/6b7f55bc225c4e30f346bf154cb39f22_1300x246.jpeg)
-
 ## 8. Advanced Users: Slot Leader Panel
+![Leader Panel](/assets/images/6b7f55bc225c4e30f346bf154cb39f22_1300x246.jpeg)
 
 Once your Pool gets big and is regularly minting blocks, it becomes diffcult to keep track of all Leader Slots and also to identify the available gaps for Pool maintainance. This Slot Leader Panel is quite helpful as it gives a good overview of all scheduled Slots in TimeSeries.
 
