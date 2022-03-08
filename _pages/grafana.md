@@ -28,9 +28,9 @@ I found it difficult to get all the information at one place so am writing this 
 
 
 
-## 1. Install prometheus node exporter on Block Producing Node
+## 1. Install prometheus node exporter
 
-
+Firstly install Prometheus node exporter on the Block Producing and all Relay Nodes
 
 for Ubuntu 20.04
 ```shell
@@ -95,39 +95,22 @@ $ sudo ufw allow proto tcp from <RN IP address> to any port 12798
 
 $ sudo ufw reload
 
-restart the node
+restart the nodes
 
-$ sudo systemctl restart <your BP node name e.g. cnode>
+$ sudo systemctl restart <your node name e.g. cnode>
 ```
 
 
-## 2. Install Prometheus and prometheus node exporter on Relay Node
+## 2. Install Prometheus on Monitoring Node
 
+Install Prometheus on the Monitoring Node - the Node where the Grafanba Server will run. This could be on of the Relay nodes or a separate dedicated node for monitoring.
 
-
-Install Prometheus
 ```shell
 $ sudo apt-get install -y prometheus
 ```
 
 
-Install prometheus node exporter on RN (Ubuntu 20.04)
-```shell
-$ sudo apt-get install -y prometheus-node-exporter
-```
----
-**NOTE**
-
-for Ubuntu 18.04 repeat the steps of PN above in the RN as well and install the node_exporter service instead
-
----
-
-
-repeat Step 2 for all your RN
-
-
-
-## 3. Install Grafana on Relay Node
+## 3. Install Grafana on Monitoring Node
 
 
 ```shell
@@ -212,11 +195,14 @@ Verify that the services are running properly
 ```shell
 $ sudo systemctl status grafana-server.service prometheus.service prometheus-node-exporter.service
 ```
-On RN open ports 3000 for Grafana
+On the Monitoring Node open ports 3000 for Grafana
 ```shell
-$ sudo ufw allow from <your local IP address> to any port 3000
+$ sudo ufw allow from <your home IP address from where you plan to access Grafana> to any port 3000
 ```
 
+:::note
+Please refer to [Grafana Labs Secuirty](https://grafana.com/docs/grafana/latest/administration/security/) for hardening>
+:::
 
 ## 4. Setting up Grafana Dashboard
 
@@ -239,7 +225,7 @@ Click Save & Test
 Download my Dashboard that you see on the top of this page, from the following GitHub link and save the JSON file
 
 
-[SNSKY Dashboard Example](https://raw.githubusercontent.com/sandy4de/SNSKY/main/SNSKY_Dashboard_v2.json)
+[SNSKY Dashboard Example](https://github.com/sanskys/SNSKY/blob/main/SNSKY_Dashboard_v2.json)
 
 
 
