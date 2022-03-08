@@ -397,7 +397,7 @@ Create an Alert if PN is not reachable
 
 Please not that Alerts can only be created for "Graph" panels!
 
-Now we create an Alert to get an emaial if the PN is not reachable
+Now we create an Alert to get an email if the PN is not reachable
 
 
 
