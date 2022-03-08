@@ -214,7 +214,7 @@ On RN, open http://localhost:3000 or http://*your relaynode ip address*:3000 in 
 Login with admin / admin
 Change password
 
-
+![Datasource](/assets/images/snsky_prometheus.jpg)
 
 Click the configuration gear icon, then Add data Source
 Select Prometheus
@@ -360,6 +360,7 @@ from_name = Grafana
 #############################
 ```
 
+![Email Alert](/assets/images/snsky_EmailAlert.jpg)
 
 Login to Grafana with username and password.
 
@@ -393,7 +394,7 @@ Click on "Save" to add this channel
 
 Create an Alert if PN is not reachable
 
-
+![Peer Alert](/assets/images/snsky_PeerAlert.jpg)
 
 Please not that Alerts can only be created for "Graph" panels!
 
