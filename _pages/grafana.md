@@ -503,7 +503,7 @@ Once your Pool gets big and is regularly minting blocks, it becomes diffcult to 
  
 Use cardano-cli to query the leadership schedule. Since the result has to interpreted by Grafana, we need to format the query output to a CSV readable syntax.
 
-The whole script including can be copied from here:
+The whole script can be copied from here:
 
 [Slot Leader Script](https://github.com/sanskys/SNSKY/blob/main/SlotLeader/script.sh)
 
