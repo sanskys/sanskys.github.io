@@ -205,7 +205,7 @@ $ sudo ufw allow from <your home IP address from where you plan to access Grafan
 **NOTE**
 
 
-Please refer to [Grafana Labs Secuirty](https://grafana.com/docs/grafana/latest/administration/security/) for hardening
+Please refer to [Grafana Labs Secuirty](https://grafana.com/docs/grafana/latest/administration/security/) for hardening e.g. by default the communication with the Grafana server is unencrypted.
 
 
 ---
