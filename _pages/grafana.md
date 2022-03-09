@@ -501,36 +501,9 @@ $ sudo systemctl restart grafana-server
 Once your Pool gets big and is regularly minting blocks, it becomes diffcult to keep track of all Leader Slots and also to identify the available gaps for Pool maintainance. This Slot Leader Panel is quite helpful as it gives a good overview of all scheduled Slots in TimeSeries.
 
  
+Use cardano-cli to query the leadership schedule. Since the result has to interpreted by Grafana, we need to format the query output to a CSV readable syntax.
 
-First Step is to get the Leaderlog. This can be done using the cncli tool: https://github.com/AndrewWestberg/cncli
-
- 
-
-Since the log has to interpreted by Grafana, we need to format it in a readable syntax. Please add the following lines to your cncli-leaderlog shell script and change the timezone to UTC. Grafana expects the timestamp in UTC and uses browser time, to convert the timestamp to local time zone.
-
- 
-```shell
-#######################################################################
-
-AT=$(jq '.[].at' <<< $ASSIGNED | sed -e 's/.......$//' -e 's/T/ /g' -e 's/"/''/g')
-
-SLOT=$(jq '.[].slot' <<< $ASSIGNED)
-
-NO=$(jq '.[].no' <<< $ASSIGNED)
-
- 
-
-paste <(echo "$AT") <(echo "$SLOT") <(echo "") <(echo "$NO") --delimiters , > slot.csv
-
-sed -i '1 i\Time,Slot,No' slot.csv
-
-cat slot.csv
-
-#######################################################################
-```
- 
-
-The whole script including this addition can be copied from here:
+The whole script including can be copied from here:
 
 [Slot Leader Script](https://github.com/sanskys/SNSKY/blob/main/SlotLeader/script.sh)
 
