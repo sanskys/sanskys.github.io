@@ -517,7 +517,7 @@ The whole script can be copied from here:
 
  
 
-In case the slot.csv file is on a different node, copy it to yourGrafana Monitoring node manually. This step could be automated but I dont wish to open extra ports for this so I just copy and paste the content of the slot.csv file.
+In case the slot.csv file is on a different node, copy it to your Grafana Monitoring node manually. This step could be automated but I dont wish to open extra ports for this so I just copy and paste the content of the slot.csv file.
 
  
 
