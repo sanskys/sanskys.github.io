@@ -9,7 +9,7 @@ header:
   actions:
     - label: "Stake with SNSKY and win Deep Sky NFTs!"
       url: "#faqs"
-excerpt: "More than 30 Million ADA are staked with SNSKY Pool and we will be honored to welcome you in our family as well."
+excerpt: "More than 20 Million ADA are staked with SNSKY Pool and we will be honored to welcome you in our family as well."
 
 intro: 
   - title: "Why should you delegate to SNSKY?"
