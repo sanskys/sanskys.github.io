@@ -46,8 +46,10 @@ alerts:
 
 Alert you at every Epoch begin in case the Pools you have delegated to change their Data. At the moment the following Data is being monitored:
 
+    
     Pool Ticker, Pool Description, Homepage, Declared Pledge, Margin Cost, Fixed Cost
  
+
 To subscribe for Pool Alerts, follow the Bot and DM: 
 
 **Alert POOLNAME** e.g. Alert SNSKY" 
