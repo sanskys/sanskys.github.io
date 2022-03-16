@@ -4,7 +4,7 @@ layout: single
 permalink: /grafana/
 header:
   overlay_color: "#000"
-  overlay_filter: "0.1"
+  overlay_filter: "0.4"
   overlay_image: /assets/images/6b7f55bc225c4e30f346bf154cb39f22_1300x246.jpeg
 ---
 ![Grafana Tutorial](/assets/images/6aaef6221ba53739628df6959598b271_1016x411.jpg)
