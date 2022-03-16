@@ -62,6 +62,7 @@ Alert you at every Epoch begin in case the Pools you have delegated to change th
 
  
 To subscribe for Pool Alerts, follow the Bot and DM: 
+
 **Alert POOLNAME** e.g. Alert SNSKY" 
 
 
