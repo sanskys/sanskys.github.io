@@ -20,7 +20,7 @@ bot:
 You dont have to spend hours in searching for the right pool. Now you just need to follow the Bot 
 
 
-and Tweet **@CardanoAdvisor Pool**: To receive best match among all Pools"
+and DM **Pool**: To receive best match among all Pools"
 
  
 wallet:
@@ -33,11 +33,11 @@ We are used to getting SMS and Email Alerts when a transaction takes place in ou
 If you wish to spend your time on something more usefull than refreshing your wallet balance then subscribe to @CardanoAdvisor
 
  
-To subscribe for Wallet Alerts, follow the Bot and DM: **Alert StakeID** . Whenever there is a transaction, the Bot will send you a DM mentioning the new Wallet Balance.
+To subscribe for Wallet Alerts, follow the Bot and DM: **Wallet StakeID** . Whenever there is a transaction, the Bot will send you a DM mentioning the new Wallet Balance.
 
  
  
-Try it out: e.g. Alert stake1u9mjvk55xpsf44efvrs6rw5sk26gzmvphfcmhtcx2g0av7gqftnmq"
+Try it out: e.g. Wallet stake1u9mjvk55xpsf44efvrs6rw5sk26gzmvphfcmhtcx2g0av7gqftnmq"
 
 alerts:
   - image_path: /assets/images/bce9c57e18af65b014f70b3d670e059d.jpg
@@ -66,8 +66,8 @@ Alert you at every Epoch begin in case the Pools you have delegated to change th
     Fixed Cost
 
  
-To subscribe for Pool Alerts, follow the Bot and tweet: 
-**@CardanoAdvisor Alert POOLNAME** e.g. @CardanoAdvisor Alert SNSKY" 
+To subscribe for Pool Alerts, follow the Bot and DM: 
+**Alert POOLNAME** e.g. "Alert SNSKY" 
 
 
 spo:
@@ -106,9 +106,9 @@ All Pools are competing with each other for delegators. Do you wish to know, how
 
  
 The Bot can evaluate your Pools growth over the last Epoch, in relation to other Pools close to you with similar Stake.
-Seems interesting or? Just follow the Bot and Tweet
+Seems interesting or? Just follow the Bot and DM
  
-**@CardanoAdvisor Peers**"
+**Peers**"
 
 ---
 
