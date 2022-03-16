@@ -3,7 +3,7 @@ title: "Boost-up your Crypto journey now!"
 layout: splash
 header:
   overlay_color: "#000"
-  overlay_filter: "0.9"
+  overlay_filter: "0.1"
   overlay_image: /assets/images/rocket-launch-693236_960_720.jpg
 
   actions:
