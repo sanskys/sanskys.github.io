@@ -4,7 +4,7 @@ layout: splash
 permalink: /advisor/
 header:
   overlay_color: "#000"
-  overlay_filter: "0.1"
+  overlay_filter: "0.4"
   overlay_image: /assets/images/b85e016d13eec776655b6575267fcf84.png
 
   actions:
