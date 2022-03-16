@@ -20,7 +20,7 @@ bot:
 You dont have to spend hours in searching for the right pool. Now you just need to follow the Bot 
 
 
-and DM **Pool**: To receive best match among all Pools"
+and DM **Pools**: To receive best match among all Pools"
 
  
 wallet:
