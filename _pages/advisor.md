@@ -50,18 +50,13 @@ Alert you at every Epoch begin in case the Pools you have delegated to change th
 
     Pool Ticker
 
-
     Description
-
 
     Homepage
 
-
     Declared Pledge
 
-
     Margin Cost
-
 
     Fixed Cost
 
