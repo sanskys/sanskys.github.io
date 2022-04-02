@@ -106,11 +106,11 @@ author:
   avatar           : "/assets/images/1Tree-ts1635157062.jpg" # path of avatar image
   bio              : "Cardano Enthusiast"
   location         : "Germany"
-  email            :
+  email            : "snsky@protonmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "mailto:snsky@protonmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -148,6 +148,9 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:snsky@protonmail.com"
 
 
 # Reading Files
