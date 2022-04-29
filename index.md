@@ -145,17 +145,13 @@ feature_row_center:
     btn_label: "Read More"
     btn_class: "btn--primary"
 ---
-# OUR WHALE #
-
-{% include feature_row id="whale" type="center" %}
-
 ## POOL AWARDS ##
 
 {% include feature_row id="awards" %}
 
 {% include feature_row id="intro" type="center" %}
 
-## CARDANO COMMUNITY PROJECTS ##
+## OUR CARDANO PROJECTS ##
 
 {% include feature_row id="projects" %}
 
