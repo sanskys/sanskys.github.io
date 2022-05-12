@@ -533,8 +533,12 @@ Next, we add the CSV Plugin to Grafana. Please follow the instructions under the
 
 After the installation, in Data Sources now the CSV Plugin should be listed. Configure the CSV Plugin by specifying the location of the slot.csv file. Save & Test and if all steps were followed correctly, you should get the green sucess messsage.
 
- 
+Reading files from the local file system is disabled by default. To allow local mode, add the following to your Grafana config file: 
 
+```shell
+[plugin.marcusolsson-csv-datasource]
+allow_local_mode = true
+```
  
 
 The final step is to add the Slot Leader Panel to your dashboard. For that click on the "Add Panel" and "Add New Panel" icons.
