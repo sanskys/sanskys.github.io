@@ -299,6 +299,7 @@ $ sudo nano /lib/systemd/system/prometheus-node-exporter.service
 ```
 Change ExecStart line to
 ```shell
+[Service]
 ExecStart=/usr/bin/prometheus-node-exporter --collector.textfile.directory=< YOUR NODE FULL PATH >/poolStat --collector.textfile
 ```
 The default user of prometheus-node-exporter is "prometheus". Either give the user "prometheus" read and execute rights for poolStat.prom, or alternatively you could change the default user to your user name in prometheus-node-exporter.service:
