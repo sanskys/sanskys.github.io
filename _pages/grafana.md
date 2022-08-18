@@ -301,6 +301,11 @@ Change ExecStart line to
 ```shell
 ExecStart=/usr/bin/prometheus-node-exporter --collector.textfile.directory=< YOUR NODE FULL PATH >/poolStat --collector.textfile
 ```
+The default user of prometheus-node-exporter is "prometheus". Either give the user "prometheus" read and execute rights for poolStat.prom, or alternatively you could change the default user to your user name in prometheus-node-exporter.service:
+```shell
+[Service]
+User=<Linux User Name>
+```
 
 Reload daemon and restart services
 ```shell
