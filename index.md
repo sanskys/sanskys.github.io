@@ -28,7 +28,7 @@ whale:
 awards:
   - image_path: /assets/images/100delegators.png
   - image_path: /assets/images/30Mstake.png
-  - image_path: /assets/images/100blocks.png
+  - image_path: /assets/images/1000blocks.png
 
 projects:
   - image_path: /assets/images/freelancer-763730_960_720.jpg
