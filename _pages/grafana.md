@@ -85,7 +85,7 @@ for Ubuntu 18.04 use from now on in the tutorial the node_exporter.service inste
 Update mainnet-config.json config files with new hasEKG and has Prometheus ports.
 ```shell
 $ cd $NODE_HOME
-$ sed -i mainnet-config.json -e "s/127.0.0.1/0.0.0.0/g"
+$ sed -i config.json -e "s/127.0.0.1/0.0.0.0/g"
 
 On PN you need to open ports 12798 and 9100
 
@@ -98,7 +98,7 @@ $ sudo ufw reload
 
 restart the nodes
 ```shell
-$ sudo systemctl restart <your node name e.g. cnode>
+$ sudo systemctl restart <your node name e.g. cardano-node>
 ```
 
 
@@ -253,11 +253,11 @@ To see a list of installed panels, click the Plugins item in the main menu. Both
 
 
 
-## 5. Add Data from Adapools to the Dashboard
+## 5. Add Data from Cexplorer to the Dashboard
 
 
 
-Copy your JSON link or your Pool ID from Share/Promote Tab and JSON data outputs in adapools.org
+Cexplorer provides an API where we can collect data for our pool. Run the following commands to create directory for our pool statistics and script.
 
 
 
@@ -270,15 +270,11 @@ mkdir -p poolStat
 
 cd poolStat
 
-echo "curl https://js.adapools.org/pools/< YOUR POOL ID >/summary.json 2>/dev/null \
-
-| jq '.data | del(.pool_id_bech32, .hist_bpe, .handles, .hist_roa, .db_ticker, .db_name, .db_url, .ticker_orig, .group_basic, .pool_id, .direct, .db_description, .tax_ratio_old, .tax_fix_old)' \
-
-| tr -d \\\"{},: \
-
-| awk NF \
-
-| sed -e 's/^[ \t]*/adapools_/' > poolStat.prom" > getstats.sh
+echo "curl https://js.cexplorer.io/api-static/pool/< YOUR POOL BECH 32 POOL ID >.json 2>/dev/null \\
+| jq '.data' | jq 'del(.stats, .url , .img, .updated, .handles, .pool_id, .name, .pool_id_hash)' \\
+| tr -d \\\"{},: \\
+| awk NF \\
+| sed -e 's/^[ \t]*/cexplorer_/' > poolStat.prom" > getstats.sh
 
 chmod +x getstats.sh
 
@@ -318,11 +314,11 @@ $ sudo systemctl restart prometheus.service
 ```
 
 
-Now you should see in the Dashboard all Adapool statistics
+Now you should see in the Dashboard all Cexplorer statistics
 
 
 
-Since the statistics will change, lets set cron job to update data from ADApools everyday
+Since the statistics will change, lets set cron job to update data from Cexplorer everyday
 
 
 ```shell
