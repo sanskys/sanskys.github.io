@@ -32,7 +32,7 @@ We are used to getting SMS and Email Alerts when a transaction takes place in ou
  
 If you wish to spend your time on something more usefull than refreshing your wallet balance then subscribe to @CardanoAdvisor
 
- 
+Since tracking wallets is cost intensive, this feature is only available to SNSKY Pool delegators.
 To subscribe for Wallet Alerts, follow the Bot and DM: **Wallet StakeID** . Whenever there is a transaction, the Bot will send you a DM mentioning the new Wallet Balance.
 
  
